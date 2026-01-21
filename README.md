@@ -19,6 +19,11 @@ gradlew build
 
 Drop the built jar into your `mods` folder alongside Health Bars and Dynamic Difficulty.
 
+## Download
+
+Grab the latest release from:
+https://github.com/Maeiro/healthbars-dd-compat/releases/tag/v0.1.0
+
 ## Credits
 
 - Health Bars by Fuzss: https://github.com/Fuzss/healthbars
