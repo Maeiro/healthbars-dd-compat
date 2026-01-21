@@ -1,0 +1,7 @@
+.gradle/
+build/
+.vscode/
+run/
+*.log
+*.tmp
+_README_TMP.txt
