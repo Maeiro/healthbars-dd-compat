@@ -1,0 +1,38 @@
+plugins {
+    id "java"
+    id "net.neoforged.moddev" version "2.0.121"
+}
+
+group = mod_group
+version = "${mod_version}+${minecraft_version}"
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+neoForge {
+    version = neoforge_version
+
+    runs {
+        client {
+            client()
+            gameDirectory = file("run")
+        }
+    }
+
+    mods {
+        register(mod_id) {
+            sourceSet(sourceSets.main)
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = "UTF-8"
+}

@@ -1,0 +1,11 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+        maven {
+            url = "https://maven.neoforged.net/releases"
+        }
+    }
+}
+
+rootProject.name = "healthbars-dd-compat"

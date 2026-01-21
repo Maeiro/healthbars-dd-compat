@@ -1,0 +1,42 @@
+modLoader="javafml"
+loaderVersion="*"
+license="All Rights Reserved"
+
+[[mods]]
+modId="healthbars_dd_compat"
+version="0.1.0+1.21.1"
+displayName="Health Bars Dynamic Difficulty Compat"
+description='''
+Adds Dynamic Difficulty level display to Health Bars.
+'''
+
+[[mixins]]
+config="healthbars_dd_compat.mixins.json"
+
+[[dependencies.healthbars_dd_compat]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.healthbars_dd_compat]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.healthbars_dd_compat]]
+modId="healthbars"
+type="required"
+versionRange="*"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.healthbars_dd_compat]]
+modId="dynamic_difficulty"
+type="required"
+versionRange="*"
+ordering="NONE"
+side="CLIENT"
