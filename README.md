@@ -22,7 +22,14 @@ Drop the built jar into your `mods` folder alongside Health Bars and Dynamic Dif
 ## Download
 
 Grab the latest release from:
-https://github.com/Maeiro/healthbars-dd-compat/releases/tag/v0.1.0
+https://github.com/Maeiro/healthbars-dd-compat/releases/latest
+
+## Config
+
+Client config file: `config/healthbars_dd_compat-client.toml`
+
+- `level_prefix = false` -> `Mob Lv. 99` (default)
+- `level_prefix = true` -> `Lv. 99 Mob`
 
 ## Credits
 

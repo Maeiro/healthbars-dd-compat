@@ -1,5 +1,6 @@
 package dev.muon.healthbars_dd_compat.compat;
 
+import dev.muon.healthbars_dd_compat.HealthBarsDDCompatConfig;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
@@ -61,6 +62,13 @@ public final class DynamicDifficultyCompat {
         Component levelComponent = Component.translatable("healthbars.dynamic_difficulty.level_suffix", level.getAsInt());
         if (color != -1) {
             levelComponent = levelComponent.copy().withStyle(style -> style.withColor(color));
+        }
+
+        if (HealthBarsDDCompatConfig.LEVEL_PREFIX.get()) {
+            return Component.empty()
+                    .append(levelComponent)
+                    .append(CommonComponents.SPACE)
+                    .append(baseName);
         }
 
         return Component.empty()
