@@ -1,0 +1,11 @@
+{
+  "packages": {
+    ".": {
+      "release-type": "simple",
+      "extra-files": [
+        "gradle.properties",
+        "src/main/resources/META-INF/neoforge.mods.toml"
+      ]
+    }
+  }
+}

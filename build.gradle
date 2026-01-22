@@ -31,7 +31,18 @@ neoForge {
 
 repositories {
     mavenCentral()
+    maven {
+        url = "https://maven.muon.rip/releases/"
+    }
+    maven {
+        url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/"
+    }
 }
+
+dependencies {
+    compileOnly("dev.muon.dynamic_difficulty:dynamic_difficulty-common:${dynamic_difficulty_version}")
+}
+
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = "UTF-8"

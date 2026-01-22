@@ -15,6 +15,13 @@ NeoForge addon that integrates Dynamic Difficulty mob levels into Health Bars.
 gradlew build
 ```
 
+## Release Checklist
+
+1) Update `gradle.properties` (`mod_version`)
+2) Update `src/main/resources/META-INF/neoforge.mods.toml` (`version`)
+3) Build: `gradlew build`
+4) Tag and push: `git tag vX.Y.Z` then `git push origin vX.Y.Z`
+
 ## Usage
 
 Drop the built jar into your `mods` folder alongside Health Bars and Dynamic Difficulty.

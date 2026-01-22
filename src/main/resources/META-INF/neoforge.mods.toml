@@ -4,7 +4,7 @@ license="MIT"
 
 [[mods]]
 modId="healthbars_dd_compat"
-version="0.2.0+1.21.1"
+version="0.3.0+1.21.1"
 displayName="Health Bars Dynamic Difficulty Compat"
 description='''
 Adds Dynamic Difficulty level display to Health Bars.
